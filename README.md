@@ -1,4 +1,4 @@
-
+# Steering-Wheel-Interactions
 ## Overview
 
 This project explores the use of gestural interfaces as an alternative interaction technique for controlling car infotainment systems. Instead of relying on traditional touchscreens or physical buttons, the implementation utilizes a combination of Python neural networks (NN) with Keras.
