@@ -71,4 +71,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Driving Simulator/Library/*
+Driving Simulator/Temp/*
+Driving Simulator/Logs/*
+Driving Simulator/UserSettings/*
 
