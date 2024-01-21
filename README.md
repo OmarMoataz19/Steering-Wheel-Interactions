@@ -34,7 +34,7 @@ The project workflow involves the following key steps:
 7. **Gesture Mapping:**
     - The Unity code maps the detected gestures to control different infotainment systems.
 ### For further implementation details refer to the thesis on [Google Drive](https://drive.google.com/drive/folders/1COTy0H4fxzZBZI4VRes5n716vWteKPeu?usp=sharing).
-
+### The Static gestures model achieved an accuracy of 99.7 percent, while the dynamic gestures model achieved an accuracy of 90 percent. This is Highlighted in the google drive as well.
 ## MediaPipe Hand Landmarks 
 
 ![MediaPipe Hand Landmarks](Landmarks%20image.png)
@@ -83,7 +83,6 @@ An experiment was conducted to compare the user experience and safety between ge
 
 3. **Interaction:**
     - Perform gestures in front or behind the steering wheel to control various infotainment systems in the Unity environment.
-
 
 ## Folder Structure
 
