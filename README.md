@@ -1,13 +1,14 @@
 
-### Overview
+## Overview
 
-This project explores the use of gestural interfaces as an alternative interaction technique for controlling car infotainment systems. Instead of relying on traditional touchscreens or physical buttons, the implementation utilizes a combination of Python neural networks (NN) with Keras and a Unity-based driving simulator.
+This project explores the use of gestural interfaces as an alternative interaction technique for controlling car infotainment systems. Instead of relying on traditional touchscreens or physical buttons, the implementation utilizes a combination of Python neural networks (NN) with Keras.
+This idea seems promising since it reduces the driver's cognitive load and visual demand, hence improving the driver's safety.
 
-### Video Previews
+## Video Previews
 
-Check out video previews of the project on [Google Drive](link_to_video_previews).
+Check out video previews of the project on [Google Drive](https://drive.google.com/drive/folders/1COTy0H4fxzZBZI4VRes5n716vWteKPeu?usp=sharing).
 
-### Implementation
+## Implementation
 
 The project workflow involves the following key steps:
 
@@ -32,22 +33,46 @@ The project workflow involves the following key steps:
       
 7. **Gesture Mapping:**
     - The Unity code maps the detected gestures to control different infotainment systems.
-  
-### MediaPipe Hand Landmarks
+### For further implementation details refer to the thesis on [Google Drive](https://drive.google.com/drive/folders/1COTy0H4fxzZBZI4VRes5n716vWteKPeu?usp=sharing).
 
-![MediaPipe Hand Landmarks](link_to_image)
+## MediaPipe Hand Landmarks 
+
+![MediaPipe Hand Landmarks](Landmarks%20image.png)
 
 The image above illustrates the 21 landmarks produced by Google's MediaPipe library.
 
-### Experiment Results
+## Features
 
-An experiment was conducted to compare the user experience and safety between gestural interfaces and touch interfaces. Surprisingly, users with gestural interfaces experienced fewer accidents compared to those using touch interfaces. This unexpected result suggests the potential benefits of gestural interfaces in enhancing safety during driving.
+### Limited Data Augmentation Requirement
 
-### Usage
+Unlike traditional computer vision projects that heavily rely on extensive data augmentation to achieve robustness, this gestural interface project takes advantage of hand landmarks. The reliance on key landmarks minimizes the need for elaborate data augmentation techniques. The model's focus on the relative positions of these landmarks makes it inherently robust to variations in hand appearance, lighting conditions, and backgrounds.
+
+### High Customizability for User Convenience
+
+One notable feature of this gestural interface system is its exceptional level of customization. Users can tailor the system to their preferences by following a straightforward process:
+
+1. **Capture Gesture Data:**
+   - Users are required to take a few photos of themselves performing the desired gestures in front of the camera.
+
+2. **Retraining the Model:**
+   - The collected gesture data is used to retrain the neural network. Thanks to the simplified task of interpreting hand landmarks, this retraining process is efficient and requires minimal time.
+
+3. **Personalized System:**
+   - After retraining, users can seamlessly use the system with gestures of their choice, making the entire interaction experience highly personalized and convenient.
+
+This customization aspect not only enhances user satisfaction but also makes the system adaptable to individual preferences and requirements.
+
+
+## Experiment Results
+
+An experiment was conducted to compare the user experience and safety between gestural interfaces and touch interfaces. Surprisingly, users with gestural interfaces experienced fewer accidents compared to those using touch interfaces. This unexpected result suggests the potential benefits of gestural interfaces in enhancing safety during driving. For the experiment results check the Evaluation Section in the thesis on [Google Drive](https://drive.google.com/drive/folders/1COTy0H4fxzZBZI4VRes5n716vWteKPeu?usp=sharing).
+
+## Usage
 
 1. **Dependencies:**
     - Python 
     - Keras
+    - Numpy
     - MediaPipe
     - Unity 3D
 
@@ -60,12 +85,12 @@ An experiment was conducted to compare the user experience and safety between ge
     - Perform gestures in front or behind the steering wheel to control various infotainment systems in the Unity environment.
 
 
-### Folder Structure
+## Folder Structure
 
 - `Driving Simulator/`: Contains Unity project files.
 - `Classifiers/`: Includes Python scripts for hand landmark extraction and gesture recognition.
 
-### Acknowledgments
+## Acknowledgments
 
 - This project relies on Google's MediaPipe library for robust hand landmark extraction.
 - The Unity environment is built using the Unity 3D engine.
